@@ -62,7 +62,7 @@ public class Coworker {
 	
 	private int completedCycles = 0; // Conta i cicli completati
 	
-	private int MAX_CYCLES = 0; // Cambia con il numero desiderato (5, 100, 1000)
+	private int MAX_CYCLES = 0; 
 	
 	private List<Coordinate> originalPath; // Salva il percorso originale
 	
