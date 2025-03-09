@@ -186,7 +186,7 @@ public class Coworker {
         this.hasReachedTarget = false; // Reset dello stato del coworker
     }
 
-    // Metodo per ottenere il percorso (opzionale)
+    // Metodo per ottenere il percorso 
     private List<Coordinate> getPath() {
         return this.path;
     }
