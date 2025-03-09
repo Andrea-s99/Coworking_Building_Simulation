@@ -1,0 +1,76 @@
+<repast.simphony.data2.engine.DataSetDescriptor simphonyVersion="2.11.0">
+  <name>Agent Counts</name>
+  <type>AGGREGATE</type>
+  <inclTick>true</inclTick>
+  <inclBatchRun>false</inclBatchRun>
+  <inclRandomSeed>false</inclRandomSeed>
+  <scheduleParams>
+    <start>1.0</start>
+    <interval>1.0</interval>
+    <priority>-Infinity</priority>
+    <pType>LAST</pType>
+    <duration>-1.0</duration>
+    <frequency>REPEAT</frequency>
+    <hashCode>402165738</hashCode>
+  </scheduleParams>
+  <atEnd>false</atEnd>
+  <methodDataSources class="linked-hash-map">
+    <entry>
+      <string>Total Resident</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Total Resident</id>
+        <className>coworking.agents.Valle</className>
+        <methodName>getResidenti</methodName>
+        <aggType>MEAN</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>Total Fuel Cost</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Total Fuel Cost</id>
+        <className>coworking.agents.Coworker</className>
+        <methodName>getTotalFuelCost</methodName>
+        <aggType>MEAN</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>Total CO2 Emission</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Total CO2 Emission</id>
+        <className>coworking.agents.Coworker</className>
+        <methodName>getTotalCO2Emission</methodName>
+        <aggType>MEAN</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>Total Satisfaction</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Total Satisfaction</id>
+        <className>coworking.agents.Coworker</className>
+        <methodName>getSatisfaction</methodName>
+        <aggType>MEAN</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>Earnings Services</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Earnings Services</id>
+        <className>coworking.agents.Service</className>
+        <methodName>getEarnings</methodName>
+        <aggType>MEAN</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>Total Collaborations</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Total Collaborations</id>
+        <className>coworking.agents.Valle</className>
+        <methodName>getCollaborations</methodName>
+        <aggType>MEAN</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+  </methodDataSources>
+  <countSources class="linked-hash-map"/>
+  <customNADataSources class="linked-hash-map"/>
+  <customAggDataSources class="linked-hash-map"/>
+</repast.simphony.data2.engine.DataSetDescriptor>
